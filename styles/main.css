@@ -8,8 +8,7 @@ body{
     background-color: hsl(47, 88%, 63%);
     font-size: 16px;
     font-family: "Figtree", sans-serif;
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -20,7 +19,7 @@ article{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 32.6rem;
+    height: auto;
     width: 24rem;
     border-radius: 20px;
     border-left: solid 1px black;
@@ -39,7 +38,7 @@ article:hover h1 {
 }
 
 .banner-image{
-   height: 12.5rem;
+   height: auto;
    width: 21rem; 
    margin-top: 1.5rem;
    margin-bottom: 1.5rem;
@@ -47,9 +46,9 @@ article:hover h1 {
  
 }
 
-.card-content{
+.card-body{
     width: 21rem;
-    height: 12rem;
+    height: auto;
     margin: 0 auto;
 
     time{
@@ -60,20 +59,14 @@ article:hover h1 {
     }
 }
 
-.card-content span{
+.card-body span{
     background-color: hsl(47, 88%, 63%);
     padding: 0.25rem 0.75rem;
     border-radius: 4px;
     font-weight: 800;
 }
 
-/* .card-content small{
-    display: block;
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
-} */
-
-.card-content p{
+.card-body p{
     margin-top: 0.75rem;
     margin-bottom: 1.5rem;
     font-weight: 500;
@@ -86,10 +79,15 @@ footer{
     align-items: center;
     gap: 5.5px;
     align-self: flex-start;
-    margin-left: 1.5rem; 
+    margin-left: 1.5rem;
+    margin-bottom: 2rem; 
 
     span{
         font-weight: 800
+    }
+
+    img{
+        width: 2rem;
     }
 }
 
