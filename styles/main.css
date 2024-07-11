@@ -15,7 +15,7 @@ body{
     align-items: center; 
 } 
 
-main{
+article{
     background-color:  hsl(0, 0%, 100%);
     display: flex;
     flex-direction: column;
@@ -29,12 +29,12 @@ main{
     transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-main:hover{
+article:hover{
     box-shadow: 1rem 1rem;
     cursor: pointer;
 }
 
-main:hover h2 {
+article:hover h1 {
     color: hsl(47, 88%, 63%);
 }
 
@@ -51,6 +51,13 @@ main:hover h2 {
     width: 21rem;
     height: 12rem;
     margin: 0 auto;
+
+    time{
+        color: black;
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+        display: block;
+    }
 }
 
 .card-content span{
@@ -60,11 +67,11 @@ main:hover h2 {
     font-weight: 800;
 }
 
-.card-content small{
+/* .card-content small{
     display: block;
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
-}
+} */
 
 .card-content p{
     margin-top: 0.75rem;
@@ -73,18 +80,20 @@ main:hover h2 {
     color: hsl(0, 0%, 50%);
 }
 
-address{
+footer{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 5.5px;
     align-self: flex-start;
-    margin-left: 1.5rem;
+    margin-left: 1.5rem; 
+
+    span{
+        font-weight: 800
+    }
 }
 
-address span{
-    font-weight: 700;
-    font-style: normal;
-    align-self: center;
-}
+
 
 
 
